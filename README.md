@@ -133,6 +133,8 @@ pip install numpy matplotlib scipy pandas seaborn
 ## Install packages for Machine Learning
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
 pip install tensorflow tensorflow-cpu tensorboard
+python -m pip install "tensorflow<2.11"
+pip install tensorflow-directml-plugin
 
 ## Check for successful installations
 try { python -c "import torch; torch.cuda.is_available()" }
